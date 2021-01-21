@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3c1053;
+   
+   
+    
+}
+
+header {
+    width: 100%;
+
+}
+
+.header .main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    margin-top: 30px;
+}
+
+.navbar .brand {
+
+    display: flex;
+    margin: 20px 70px;
+    color: orange;
+}
+
+
+.navbar .brand .fa-bolt {
+    font-size: 1.5em;
+    color: orange;
+}
+
+
+
+.navbar .brand h3 {
+    font-size: 1.3em;
+    margin: 5px 5px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: -50px 20px;
+}
+
+
+
+.menu ul li {
+    list-style: none;
+    margin-right: 70px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3m;
+}
+
+.menu ul li a:hover {
+    color: #78aB41;
+}
+
+.navbar .toggle-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.navbar .toggle-menu i{
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.container-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container-info h1 {
+    font-size: 5em;
+    font-family: "Permanent Marker", cursive;
+    animation: left-move 1s ease-in;
+    margin-left: 8%;
+    margin-top: 10%;
+    
+}
+
+
+
+.container-info h2 {
+    font-size: 2em;
+    animation: right-move 1s ease-in;
+    margin-left: 8%;
+    
+    
+}
+
+
+.container-info .btn {
+    font-size: 1.5em;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #78aB41;
+    border: none;
+    color: #fff;
+    animation: right-move 1s ease-in;
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+.container-info .img-content img {
+    max-width: 100%;
+    animation: up-move 1s ease-in;
+    
+    
+  
+    
+}
+
+.img-content {
+    margin-top: 5%;
+}
+
+.container-info .img-content img:hover {
+   
+    filter: drop-shadow(20px 20px 10px white)
+}
+
+.container-info .social-content li {
+    list-style: none;
+    margin: 20px;
+    animation: left-move 1s ease-in
+}
+
+/*iconos*/
+.container-info .social-content i {
+    font-size: 1.3em;
+    color: #78aB41;
+}
+
+.container-info .social-content i:hover {
+    transform: scale(1.5);
+    color: orange
+}
+
+
+
+
+
+header .wave {
+    margin-top: 15px;
+}
+
+@media(max-width:803px) {
+    .navbar .brand i {
+        margin-left: -30px;
+    }
+
+  body {
+      background-position: center;
+      
+  }
+
+    .navbar .toggle-menu i {
+        display: block;
+        margin: -60px 30px;
+    }
+
+    .navbar .menu ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 110%;
+        height: 100%;
+        z-index: 1;
+        background-color: #3c1053;
+        position: fixed;
+        margin-top: 65px;
+        transform: translate(-120%);
+        transition: 1s ease-in;
+        
+    }
+    
+
+    .navbar .menu .menu-on {
+        transform: translateX(-4%);
+        margin: auto;  /*editado*/
+        display: flex;
+        margin-top: 80px;
+    }
+
+    
+
+    .navbar .menu ul li {
+        margin: 25px;
+        text-transform: uppercase;
+    }
+
+   
+
+
+    header .wave {
+        
+        margin-top: -35px;
+    }
+
+    .container-info {
+        flex-wrap: wrap-reverse;
+        margin: -50 px 50px;
+    }
+
+    .container-info h1 {
+        margin-top: 0%;
+        font-size: 3.5em;
+       
+    }
+
+    .container-info h2 {
+        padding: 2%;
+        font-size: 1.5em;
+        
+    }
+
+    /*iconos sociales*/
+    .social-content {
+    display: none;
+    }
+
+   
+   
+
+}
+
+
+@keyframes left-move {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes right-move {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes up-move {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

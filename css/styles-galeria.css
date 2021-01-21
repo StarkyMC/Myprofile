@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    background-position: center;
+}
+
+#fondo img {
+    width: 1350px;
+    height: 805px;
+}
+
+@media(max-width:803px) {
+   #fondo img {
+        display: flex;
+        transform: translateX(-4%);
+        transform: translate(-30%);
+        background-position: center;
+        width: 700px;
+        height: 700px;
+        margin-left: 25%;
+        
+    }
+
+}
